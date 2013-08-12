@@ -29,7 +29,7 @@ for key in ilo:
 		for i, l in ilo[key].items():
 			for m in l:
 				if (m  == "status"):
-					print "{} => {}".format(i, ilo[key][i][m])
+					#print "{} => {}".format(i, ilo[key][i][m])
 					# Some how the drive state is Ok and not OK...
 					# so we need to check for both:
 					if (ilo[key][i][m] == "OK" or ilo[key][i][m] == "Ok"): 
